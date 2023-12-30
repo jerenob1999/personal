@@ -1,0 +1,31 @@
+:root{
+  --primary-color: #FB8B24;
+  --secondary-color: #5F0F40;
+  --complementary-color: #E36414;
+
+  .button {
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .button--with-margin {
+    margin: 2px;
+  }
+  
+  .button--default {
+    color: #fff;
+    background-color: var(--primary-color);
+  }
+  
+  .button--default:hover {
+    background-color: var(--complementary-color);
+  }
+}

@@ -1,4 +1,27 @@
-.main section {
+.section {
   margin-top: 15rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   background-color: var(--primary);
+}
+
+.section__title {
+  font-weight: 500;
+  text-align: center;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.section__subtitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+}
+
+.section__container {
+   display: flex;
+   justify-content: center;
+   padding: 0.5rem;
 }
