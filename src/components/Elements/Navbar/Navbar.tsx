@@ -10,6 +10,7 @@ import Home from '@mui/icons-material/Home';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
+import style from './navbar.module.css';
 
 export default function MenuAppBar() {
   const [auth] = React.useState(true);
@@ -25,7 +26,7 @@ export default function MenuAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar className={style.header} position="static">
         <Toolbar>
           <IconButton
             size="large"

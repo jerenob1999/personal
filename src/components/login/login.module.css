@@ -1,0 +1,55 @@
+.card {
+  width: 450px;
+  height: 750px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 4rem;
+}
+
+.card__field {
+  margin-top: 1.2rem;
+}
+
+.card__header {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.card__button {
+  color: rgb(238, 236, 236);
+  font-weight: bold;
+  border-radius: 2rem;
+  height: 45px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card__media {
+  display: flex;
+  justify-content: center;
+}
+
+.card__link {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.card__signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card__signup__end {
+  height: 250px;
+}
+
+.tw__logo {
+  background-color: #1DA1F2;
+}
+
+.google__logo {
+  background-color: #DB4437;
+}

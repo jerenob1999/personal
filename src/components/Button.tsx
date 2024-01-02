@@ -1,7 +1,7 @@
-'use client'
+'use client';
 
-import React from 'react'
-import { Button as MUIButton } from '@mui/material'
+import React from 'react';
+import { Button as MUIButton } from '@mui/material';
 
 interface Props {
   children: React.ReactNode
@@ -10,7 +10,7 @@ interface Props {
 function Button({ children } : Props) {
   return (
     <MUIButton>{children}</MUIButton>
-  )
+  );
 }
 
-export default Button
+export default Button;

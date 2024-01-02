@@ -1,7 +1,10 @@
 :root{
   --primary-color: #FB8B24;
-  --secondary-color: #5F0F40;
+  --secondary-color: #dc0c8c;
   --complementary-color: #E36414;
+  --secondary-text: #535353;
+  --black: rgb(33, 33, 33);
+  --white: rgb(230, 230, 230);
 
   .button {
     display: inline-block;
@@ -16,6 +19,10 @@
     transition: background-color 0.3s ease;
   }
 
+  .background--gradiant {
+    background: linear-gradient(90deg,  var(--primary-color) 0%, var(--primary-color) 35%, var(--secondary-color) 100%);
+  }
+
   .button--with-margin {
     margin: 2px;
   }
@@ -27,5 +34,14 @@
   
   .button--default:hover {
     background-color: var(--complementary-color);
+  }
+
+  .link {
+    text-decoration: none;
+    color: var(--secondary-text);
+  }
+
+  .layout {
+    margin: 0;
   }
 }
