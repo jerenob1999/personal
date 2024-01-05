@@ -1,11 +1,11 @@
 import React from 'react';
-import Login from '@/components/login/Login';
+import LoginCard from '@/app/login/_components/Card';
 import style from './page.module.css';
 
 function page() {
   return (
     <div className={`${ style.page } background--gradiant`}>
-      <Login/>
+      <LoginCard/>
     </div>
   );
 }

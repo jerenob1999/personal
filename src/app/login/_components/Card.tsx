@@ -1,38 +1,17 @@
 import React from 'react';
-import { Card, CardHeader, CardContent, TextField, Typography, Button, Avatar, AvatarGroup, CardActions } from '@mui/material';
+import { Card, CardHeader, CardContent, Typography, Avatar, AvatarGroup } from '@mui/material';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GoogleIcon from '@mui/icons-material/Google';
-import style from './login.module.css';
+import style from './card.module.css';
 import Link from 'next/link';
+import LoginForm from './Form';
 
-function Login() {
+function LoginCard() {
   return (
     <Card className={style.card}>
       <CardHeader titleTypographyProps={{ className: style.card__header }} align='center' title='Login'/>
       <CardContent>
-        <TextField
-          className={style.card__field}
-          fullWidth 
-          InputLabelProps={{ shrink: true }} 
-          variant='standard'
-          label='username'
-          placeholder='Type your username'
-        />
-        <TextField
-          className={style.card__field}
-          fullWidth 
-          InputLabelProps={{ shrink: true }}
-          variant='standard'
-          type='password' 
-          label='password'
-          placeholder='Type your password'
-        />
-        <Typography variant='caption'>
-          <Link className={`${ style.card__link } link`} href={'/changepw'}>Forgot your password?</Link>
-        </Typography>
-        <CardActions>
-          <Button className={`${ style.card__button } background--gradiant`} fullWidth >login</Button>
-        </CardActions>
+        <LoginForm/>
         <div className={style.card__signup}>
           <Typography align='center' variant='caption'>
           Or Sign Up Using
@@ -59,4 +38,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default LoginCard;

@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import { HTMLInputTypeAttribute } from "react";
 import { TextField } from '@mui/material';
 
 interface Props {
@@ -8,14 +8,16 @@ interface Props {
   placeholder: string
   className: string
   register: any
+  type?: HTMLInputTypeAttribute
 }
 
-function FormInput({ label, placeholder, className, register } : Props) {
+function InputField({ label, placeholder, className, register, type } : Props) {
   return (
     <TextField
       {...register}      
       className={className}
-      fullWidth 
+      fullWidth
+      type={type}
       InputLabelProps={{ shrink: true }}
       variant='standard'
       label={label}
@@ -24,4 +26,4 @@ function FormInput({ label, placeholder, className, register } : Props) {
   );
 }
 
-export default FormInput;
+export default InputField;
