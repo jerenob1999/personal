@@ -11,6 +11,10 @@
   margin-top: 1.2rem;
 }
 
+.card__container {
+  display: flex;
+}
+
 .card__header {
   font-weight: 900;
   font-size: 30px;
@@ -30,6 +34,10 @@
   justify-content: center;
 }
 
+.card__img {
+  width: 100%;
+}
+
 .card__link {
   display: flex;
   justify-content: flex-end;
@@ -43,7 +51,7 @@
 }
 
 .card__signup__end {
-  height: 250px;
+  margin-top: 3rem;
 }
 
 .tw__logo {
@@ -53,12 +61,3 @@
 .google__logo {
   background-color: #DB4437;
 }
-
-.card__img {
-  width: 58%;
-}
-
-.card__container {
-  display: flex;
-}
-

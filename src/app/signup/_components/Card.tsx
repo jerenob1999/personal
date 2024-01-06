@@ -4,17 +4,17 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import GoogleIcon from '@mui/icons-material/Google';
 import style from './card.module.css';
 import Link from 'next/link';
-import LoginForm from './Form';
 import { Routes } from '@/lib/types/routes';
+import SignupForm from './Form';
 
-function LoginCard() {
+function SignupCard() {
   return (
     <Card className={style.card}>
-      <CardHeader titleTypographyProps={{ className: style.card__header }} align='center' title='Login'/>
+      <CardHeader titleTypographyProps={{ className: style.card__header }} align='center' title='Signup'/>
       <div className={style.card__container}>
-        <CardMedia className={style.card__img} image="./login.png" title='login' />
+        <CardMedia className={style.card__img} image="./image.jpg" title='working' />
         <CardContent>
-          <LoginForm/>
+          <SignupForm/>
           <div className={style.card__signup}>
             <Typography align='center' variant='caption'>
           Or Sign Up Using
@@ -30,10 +30,10 @@ function LoginCard() {
           </div>
           <div className={`${ style.card__signup } ${ style.card__signup__end }`}>
             <Typography align='center' variant='caption'>
-          Or Sign Up Using
+            Already have an account?
             </Typography>
             <Typography variant='subtitle2'>
-              <Link className={`${ style.card__media } link`} href={Routes.REGISTER}>SIGN UP</Link>
+              <Link className={`${ style.card__media } link`} href={Routes.LOGIN}>LOGIN</Link>
             </Typography>
           </div>
         </CardContent>
@@ -42,4 +42,4 @@ function LoginCard() {
   );
 }
 
-export default LoginCard;
+export default SignupCard;
